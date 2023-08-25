@@ -1,0 +1,201 @@
+
+
+/*for the portfolio text animation*/
+.animated-header {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.animated-header {
+    animation-name: fadeIn, fadeOut;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.aboutbtn{
+  transition: all 0.3s ease;
+  background: #0b63f3;
+  border: 2px solid #0b63f3;
+}
+ 
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0D3B40;
+  color: #F0C5EE;
+  /**background-image: url("/Users/yesuiulziibayar/Downloads/earth_natural_biei_meadow_green_summer_landscape_blue_sky-1047637.jpg!d.jpeg");
+background-size: cover; /* this makes the image cover the entire background */
+/**  background-repeat: no-repeat; /* this prevents the image from repeating */
+/****/
+}
+p{
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+#about{
+  
+  background-color: #000000;
+    margin-top:300px;
+    width: 150%;
+
+}
+/*click me button*/
+#myButton{
+    background-color: #4CAF50; /* Green */
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    padding: 2px 4px;
+    font-size: 12px;
+    transition: all 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+#myButton:active {
+  transform: scale(0.95);
+  background-color: #3e8e41; /* Lighter green */
+}
+@media screen and (min-width: 600px){
+#text {
+   padding-left: 100px;
+    
+  }
+}
+/*scaled by screen size: animated text*/
+@media screen and (min-width: 600px){
+  #text {
+    font-size: 5em;
+    
+  }
+  #dot {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 600px){
+  #text {
+    font-size: 3em;
+    
+  }
+  #dot {
+    font-size: 3em;
+  }
+}
+
+/*butterfly*/
+#animation-container {
+    pointer-events: none;
+    transform: scale(0.10);
+    position: absolute;
+    display: none;
+
+}
+#dot {
+  visibility: hidden;
+}
+@media screen and (max-width: 600px){
+div#text {
+    float: left
+}
+div#dot {
+    float: left;
+    padding-right: 30px;
+}
+}
+@media screen and (min-width: 600px){
+  div#text {
+    float: left
+}
+  div#dot {
+    float: left;
+    padding-right: 100px;
+}
+}
+#headButtons{
+  clear: both;
+}
+.text-container{
+  padding-left: 20px;
+    display:block;
+    width:100%;
+}
+
+/*image*/
+
+#profile-pic {
+  width: 30vw;
+  height: 40vh;
+  background-image: url(https://lh3.googleusercontent.com/clUznJxMnYDvOtcUDF9F2wKz6rvEsT0AchRZxsWGWuo8BSGoFy_hb0fpMTKNQ_C3-mELL86Egj0YnKs0lAA5mSeZNflczOvjeL6omw35eiLc-7tCPRLxtMd91KcNWqjrnIQ8il8XA0GXvSKPMAx1-rENaoxqb5hlYplEclZ6rLUd7GAjHlM7ttPbjk-HEXe4wp3djKkKv9RloDtRA2Cut6Aw-djKSX9WI0cb28EvCand6ZgwPmTgZVUNTKvcnsdZj9zdvyzSVGB29RUIWBNjkM_9b1t_2bg5gLorYttpnsCLbTW_JIkCNcWTXeu7xehCzKh9LFdb407i6s-S-nAOxawI1Q9lK67NJ1thvkGvMpBRhJlAoU8EN50oHWwAJgnWfnh8cG3Bqw1OygFTDNp9BaZmE2z3hj3Kb0oWHu0mt-mx9_DYqSFPgIYwR6D348Qt5c_vWPjC8RvPbP6c-JRvO4Sv8nc0poLVH9_O9KY32qSYUXJ7J3aZn4oW-oH3-HHXn0II87IcuCvYKYlZdJn1p0jYObukXXJRab2Bm29zvxdIfVu1kQSSq4rgaT5Co3WSexSFaOEjQv8lV5k9uUYn3mgymr-vg_fZzQg1yx6uge01Z8YxWEFteOQedXBg66eRKUwLck1SYDVvjuVWbUsMvFYEk5MrW43301yZStOWMjBRz6BigYxzDPtoDfWyT7fUeZ6uen9h3rSQbMM4oUVPqEz_Gh2YclPMQg4z-kTwl5cpFbDd3YVx-bsHaee1cv503psdEPYLGQVmrENyAdXUKj9kNg_0j5S8AdQv0A7xcw5lDmdMCVvmQT0Yt7YX8ycovghywehWe5a3Q4nso2XmfJ8HV4QtQAhb6bcyyJXR-nTN9StkFVAEg1W3439giCe1LPxH9i986mtGgGJI_ABymMdWhGr4UUtMpY2qJX6rfKeKJVD5zG9YbFMs2dDujSkEZRkNwR1nnzqW0aH0rQ=w1032-h970-no?authuser=0);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: inline-block;
+
+  border: 10px solid beige;
+}
+
+
+
+/*
+#trailTriangle{
+  position: relative;
+animation: trail 1s linear infinite;
+}
+#trailTriangle ::before{
+  background-image: radial-gradient(#ccc 10%, transparent 10%),
+      radial-gradient(#ccc 10%, transparent 10%);
+  background-position: 0 0, 50px 50px;
+  background-size: 20px 10px;\
+  
+}
+@keyframes trail {
+  from {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+}*/
+
+/**
+.dots-background {
+  position: relative; /* This is important to position the dots on top of the background 
+}
+
+.dots-background::before {
+  content: "";
+  position: absolute; /* Position the dots on top of the background 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#ccc 10%, transparent 10%),
+      radial-gradient(#ccc 10%, transparent 10%);
+  background-position: 0 0, 50px 50px;
+  background-size: 20px 10px;
+}
+*/
+
