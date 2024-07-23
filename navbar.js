@@ -20,8 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
             let opacity = 1 - Math.min(scrollTop / maxScroll, 1);
             scrollArrowBtn.style.opacity = opacity;
         });
-        window.addEventListener("click", () => {
+    
+        scrollArrowBtn.addEventListener("click", () => {
             experienceSection.scrollIntoView({ behavior: "smooth" });
+            
         });
+        
     }
+    
 });
