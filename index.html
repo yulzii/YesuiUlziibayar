@@ -1,64 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <div class="container">
-      <!--<svg width="100" height="100" data-name="corner-top-right" xmlns="http://www.w3.org/2000/svg" style="pointer-events:none" data-inlinesvg=".inlineSvgFile-6">
-      <path fill="#333" d="M0 0h100l-20 20H20a5 5 0 0 1-5 5v55L0 100V0z"></path>
-    </svg>-->
-  </div>
+  <div class="container"></div>
   <title>Yesui Ulziibayar</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="description" content="Yesui Ulziibayar Portfolio">
+  <meta name="keywords" content="Yesui Ulziibayar, Portfolio, Software Engineer, Software Developer">
+  <meta name="author" content="Yesui Ulziibayar">
 </head>
+
 <body>
   <header>
-    
     <h1 class="animated-header">Yesui Ulziibayar</h1>
-    <button id="myButton" type="button">Click Me</button>
-    <nav id=headButtons>
-      <a class="aboutbtn" href="#about">About</a>
-      |
-      <a class="projectsbtn" href="#projects">Projects</a>
-      |
-      <a class="contactbtn" href="#contact">Contact</a>
-    </nav>
+    
+    <nav id=navbar>
+      <ul>
+        
+        <li><a class= "nav-tab active" id="homebtn" href="#home">Home</a></li>
+
+        <li><a class= "nav-tab" id="aboutbtn" href="#about">About</a></li>
+        
+        <li><a class= "nav-tab" id="experiencebtn" href="#experience">Experience</a></li>
+        
+        <li><a class= "nav-tab" id="skillsbtn" href="#skills">Skills</a></li>
+        
+    <button id="resumeBtn" href="">Resume</button>
+      </ul>
   
-<div class="text-container">
+    </nav>
+
+  </header>
+    <section id="home" class="home">
+    <!-- animated text and profile image -->
+    <div class="text-container" >
     <!--animated text-->
     <div tabindex="0" id="text"></div>
     <div id="dot">.</div>
-
-    <img id="profile-pic">
-
-
-    
+    <img id="profile-pic" src="profile_pic.jpg" e="margin-top: -80px;">
     </div>
-
-    <div id="animation-container"></div>
-    <!--butterfly animation-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-    <script src="sketch.js"></script>
-
-
-    <script src="style.js"></script>
-
-    
-
-  </header>
-  <main>
-
-
-    <section id="about" class="widen">
-      <svg class="transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M0 .5c3.07.55 9.27-.42 16.14 0 6.88.4 13.75.57 19.14-.11V0H0z" fill="#0D3B40"/><path d="M0 1c3.17.8 7.29-.38 10.04-.55 2.75-.17 9.25 1.47 12.67 1.3 3.43-.17 4.65-.84 7.05-.87 2.4-.02 5.52.88 5.52.88V0H0z" opacity=".5" fill="#0D3B40"/><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" opacity=".5" fill="#0D3B40"/></svg>
-      <h2>About Me</h2>
-      <p>My name is John Doe and I am a web developer. I have experience in both front-end and back-end development and have worked on a variety of projects. I am constantly learning new technologies and am always looking for new challenges. In my free time, I enjoy hiking and playing video gamesy name is John Doe and I am a web developer. I have experience in both front-end and back-end development and have worked on a variety of projects. I am constantly learning new technologies and am always looking for new challenges. In my free time, I enjoy hiking and playing video gamesy name is John Doe and I am a web developer. I have experience in both front-end and back-end development and have worked on a variety of projects. I am constantly learning new technologies and am always looking for new challenges. In my free time, I enjoy hiking and playing video games.</p>
-
     </section>
 
+    <!--butterfly animation-->
+    <div id="animation-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script src="style.js"></script>
+    <script src="navbar.js"></script>
+
+  <main>
+    <div id="scrollArrowDiv">
+      <button id="scrollArrowBtn" class="scrollArrowBtn">↓ Explore My Projects ↓</button>
+    </div>
+    <div class="wave-transition">
+      <svg width="3359" height="600" viewBox="0 0 3359 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="Group 1">
+      <path id="wave3" d="M239 100.256C427.993 -13.407 632.36 -13.43 924.5 100.256C1150.12 188.054 1471.56 162.312 1610 100.256C1705 78.2523 1982.19 -31.1688 2295.5 100.256C2534.35 190.499 2851.88 165.78 2981 100.256V496.756C2711.94 344.507 2430.64 452.111 2295.5 496.756C2161.14 584.536 1844.35 606.031 1610 496.756C1321.67 330.111 1042.96 441.512 924.5 496.756C778.906 602.549 461.972 622.659 239 496.756V100.256Z" fill="black" fill-opacity="0.5"/>
+      <g id="wave2" filter="url(#filter0_d_0_1)">
+      <path d="M613 101.256C801.993 -12.407 1006.36 -12.43 1298.5 101.256C1524.12 189.054 1845.56 163.312 1984 101.256C2079 79.2523 2356.19 -30.1688 2669.5 101.256C2908.35 191.499 3225.88 166.78 3355 101.256V497.756C3085.94 345.507 2804.64 453.111 2669.5 497.756C2535.14 585.536 2218.35 607.031 1984 497.756C1695.67 331.111 1416.96 442.512 1298.5 497.756C1152.91 603.549 835.972 623.659 613 497.756V101.256Z" fill="black" fill-opacity="0.5" shape-rendering="crispEdges"/>
+      </g>
+      <path id="wave1" d="M0 100.733C188.993 -12.9299 393.36 -12.9529 685.5 100.733C911.117 188.531 1232.56 162.789 1371 100.733C1466 78.7294 1743.19 -30.6917 2056.5 100.733C2295.35 190.976 2612.88 166.257 2742 100.733V497.233C2472.94 344.984 2191.64 452.588 2056.5 497.233C1922.14 585.013 1605.35 606.508 1371 497.233C1082.67 330.588 803.957 441.989 685.5 497.233C539.906 603.026 222.972 623.136 0 497.233V100.733Z" fill="black" fill-opacity="0.5"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_0_1" x="609" y="16" width="2750" height="576.805" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="2"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <section id="about" class="about">
+
+      
+      <div class="svg-text">      
+        <h2 class="page-header" id="about-header">About Me</h2>
+        <p class="page-text" id="about-text">I am an aspiring software engineer majoring in Computer Science and Data Science, with a certificate in Digital Studies at the University of Wisconsin-Madison. I find joy in problem solving. In my free time, I enjoy traveling and eating delicious food.</p>
+      </div>
+    </section>
+
+    
+
     <!-- Your website content here -->
-    <section id="projects">
-      <h2>My Projects</h2>
-      <ul>
+    <section id="experience">
+      <h2 class="page-header">Experience</h2>
+      <p class="page-text">Updating Soon</p>
+      <!-- <ul>
         <li>
           <h3>Project 1</h3>
           <p>This is a description of my first project. It was a website built for a local business using HTML, CSS, and JavaScript.</p>
@@ -69,17 +102,18 @@
           <p>This is a description of my second project. It was a mobile app built using React Native.</p>
           <a href="#">View Project</a>
         </li>
-      </ul>
+      </ul> -->
     </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: john@doe.com</p>
-      <p>Phone: 555-555-5555</p>
+
+    <section id="skills">
+      <h2 class="page-header">Skills</h2>
+      <p>Email: yesuiulziibayar@gmail.com</p>
+      <p>Phone: (773) 595-9018</p>
       <p>LinkedIn: linkedin.com/in/johndoe</p>
     </section>
   </main>
   <footer>
-    <p>Copyright ©2023 John Doe</p>
+    <p>Copyright ©2024 Yesui Ulziibayar</p>
   </footer>
 </body>
 </html>
