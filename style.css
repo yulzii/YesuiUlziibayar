@@ -10,6 +10,7 @@
 .home>div>img{
   margin-left: -10vh;
   margin-top: 10vh;
+  object-fit: cover;
 }
 
 /********** portfolio text animation **********/
@@ -38,7 +39,7 @@
     animation-name: fadeIn, fadeOut;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 4;
     animation-direction: alternate;
 }
 /********************************************/
@@ -270,6 +271,9 @@ body {
     transform: translate(10%,30%);
 }
 
+#sub-blurb {
+  transform: translate(10%,-15vh);
+}
 
 
 
