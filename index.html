@@ -19,12 +19,10 @@
       <ul>
         
         <li><a class= "nav-tab active" id="homebtn" href="#home">Home</a></li>
-
         <li><a class= "nav-tab" id="aboutbtn" href="#about">About</a></li>
-        
         <li><a class= "nav-tab" id="experiencebtn" href="#experience">Experience</a></li>
-        
         <li><a class= "nav-tab" id="skillsbtn" href="#skills">Skills</a></li>
+        <li><a class= "nav-tab" id="contactsbtn" >Contact</a></li>
         
       </ul>
       <button id="resumeBtn" href="">Resume</button>
@@ -51,38 +49,37 @@
     <script src="navbar.js"></script>
 
   <main>
-    <div id="scrollArrowDiv">
-      <button id="scrollArrowBtn" class="scrollArrowBtn">↓ Explore My Projects ↓</button>
-    </div>
-    <div class="wave-transition">
-      <svg width="3359" height="600" viewBox="0 0 3359 600" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="Group 1">
-      <path id="wave3" d="M239 100.256C427.993 -13.407 632.36 -13.43 924.5 100.256C1150.12 188.054 1471.56 162.312 1610 100.256C1705 78.2523 1982.19 -31.1688 2295.5 100.256C2534.35 190.499 2851.88 165.78 2981 100.256V496.756C2711.94 344.507 2430.64 452.111 2295.5 496.756C2161.14 584.536 1844.35 606.031 1610 496.756C1321.67 330.111 1042.96 441.512 924.5 496.756C778.906 602.549 461.972 622.659 239 496.756V100.256Z" fill="black" fill-opacity="0.5"/>
-      <g id="wave2" filter="url(#filter0_d_0_1)">
-      <path d="M613 101.256C801.993 -12.407 1006.36 -12.43 1298.5 101.256C1524.12 189.054 1845.56 163.312 1984 101.256C2079 79.2523 2356.19 -30.1688 2669.5 101.256C2908.35 191.499 3225.88 166.78 3355 101.256V497.756C3085.94 345.507 2804.64 453.111 2669.5 497.756C2535.14 585.536 2218.35 607.031 1984 497.756C1695.67 331.111 1416.96 442.512 1298.5 497.756C1152.91 603.549 835.972 623.659 613 497.756V101.256Z" fill="black" fill-opacity="0.5" shape-rendering="crispEdges"/>
-      </g>
-      <path id="wave1" d="M0 100.733C188.993 -12.9299 393.36 -12.9529 685.5 100.733C911.117 188.531 1232.56 162.789 1371 100.733C1466 78.7294 1743.19 -30.6917 2056.5 100.733C2295.35 190.976 2612.88 166.257 2742 100.733V497.233C2472.94 344.984 2191.64 452.588 2056.5 497.233C1922.14 585.013 1605.35 606.508 1371 497.233C1082.67 330.588 803.957 441.989 685.5 497.233C539.906 603.026 222.972 623.136 0 497.233V100.733Z" fill="black" fill-opacity="0.5"/>
-      </g>
-      <defs>
-      <filter id="filter0_d_0_1" x="609" y="16" width="2750" height="576.805" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="4"/>
-      <feGaussianBlur stdDeviation="2"/>
-      <feComposite in2="hardAlpha" operator="out"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
-      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
-      </filter>
-      </defs>
-      </svg>
+    <div id="scrollArrowBtn">
+      <p id="scrollArrowText" class="scrollArrowText">Explore My Projects</p>
+      <p id="scrollArrow" class="scrollArrow">↓</p>
     </div>
     <section id="about" class="about">
-
-      
+      <div class="wave-transition">
+        <svg width="3359" height="600" viewBox="0 0 3359 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Group 1">
+        <path id="wave3" d="M239 100.256C427.993 -13.407 632.36 -13.43 924.5 100.256C1150.12 188.054 1471.56 162.312 1610 100.256C1705 78.2523 1982.19 -31.1688 2295.5 100.256C2534.35 190.499 2851.88 165.78 2981 100.256V496.756C2711.94 344.507 2430.64 452.111 2295.5 496.756C2161.14 584.536 1844.35 606.031 1610 496.756C1321.67 330.111 1042.96 441.512 924.5 496.756C778.906 602.549 461.972 622.659 239 496.756V100.256Z" fill="black" fill-opacity="0.5"/>
+        <g id="wave2" filter="url(#filter0_d_0_1)">
+        <path d="M613 101.256C801.993 -12.407 1006.36 -12.43 1298.5 101.256C1524.12 189.054 1845.56 163.312 1984 101.256C2079 79.2523 2356.19 -30.1688 2669.5 101.256C2908.35 191.499 3225.88 166.78 3355 101.256V497.756C3085.94 345.507 2804.64 453.111 2669.5 497.756C2535.14 585.536 2218.35 607.031 1984 497.756C1695.67 331.111 1416.96 442.512 1298.5 497.756C1152.91 603.549 835.972 623.659 613 497.756V101.256Z" fill="black" fill-opacity="0.5" shape-rendering="crispEdges"/>
+        </g>
+        <path id="wave1" d="M0 100.733C188.993 -12.9299 393.36 -12.9529 685.5 100.733C911.117 188.531 1232.56 162.789 1371 100.733C1466 78.7294 1743.19 -30.6917 2056.5 100.733C2295.35 190.976 2612.88 166.257 2742 100.733V497.233C2472.94 344.984 2191.64 452.588 2056.5 497.233C1922.14 585.013 1605.35 606.508 1371 497.233C1082.67 330.588 803.957 441.989 685.5 497.233C539.906 603.026 222.972 623.136 0 497.233V100.733Z" fill="black" fill-opacity="0.5"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_0_1" x="609" y="16" width="2750" height="576.805" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
+      </div>
       <div class="svg-text">      
         <h2 class="page-header" id="about-header">About Me</h2>
-        <p class="page-text" id="about-text">I am an aspiring software engineer majoring in Computer Science and Data Science, with a certificate in Digital Studies at the University of Wisconsin-Madison. I find joy in problem solving. In my free time, I enjoy traveling and eating delicious food.</p>
+        <p class="page-text" id="about-text">I am an aspiring software engineer who recently graduated with a BS in Computer Science and Data Science, with a certificate in Digital Studies at the University of Wisconsin-Madison. I have strong experience in development using Java, Python, C, React/React Native, JavaScript, CSS, HTML and more. Apart from technical skills, I bring strong interpersonal, multitasking, and written communication skills.<br><br>My passion for computer science and data science is deep-rooted in my love for solving complex problems and finding creative solutions. In creating new programs and exploring algorithms, I see myself as an inventor crafting intricate machines towards an end-goal to solve challenges that make a real impact. Throughout this process, I consistently find joy in setting new goals for myself and staying focused on those goals.</p>
       </div>
     </section>
 
