@@ -6,11 +6,7 @@
 
 .home>div>div {
   margin-top:20vh;
-}
-.home>div>img{
-  margin-left: -5vh;
-  margin-top: 10vh;
-  object-fit: cover;
+  z-index: 5;
 }
 
 /********** portfolio text animation **********/
@@ -134,7 +130,6 @@
   opacity: 0;
   transition: opacity 0.1s ease;
 }
-
 /********************************************/
 body {
   overflow-x: hidden;
@@ -154,6 +149,7 @@ p{
   height: 100vh;
 }
 
+/*************Wave SVG Animation*************/
 .wave-transition{
   margin-top: -20vh;
   transform: scaleY(150%);
@@ -183,6 +179,7 @@ p{
     transform: translateX(-10%);
 } 
 
+/********************************************/
 
 .svg-text{
     margin-top: -30em;
@@ -219,6 +216,7 @@ p{
 
 #experience{
   height: 100vh;
+  color: rgb(255, 255, 255);
 }
 
 #skills{
@@ -360,6 +358,9 @@ div#dot {
 /*image*/
 
 #profile-pic {
+  margin-left: -5vh;
+  margin-top: 10vh;
+  object-fit: cover;
   width: 30vw;
   height: 40vh;
   background-image: url(https://lh3.googleusercontent.com/clUznJxMnYDvOtcUDF9F2wKz6rvEsT0AchRZxsWGWuo8BSGoFy_hb0fpMTKNQ_C3-mELL86Egj0YnKs0lAA5mSeZNflczOvjeL6omw35eiLc-7tCPRLxtMd91KcNWqjrnIQ8il8XA0GXvSKPMAx1-rENaoxqb5hlYplEclZ6rLUd7GAjHlM7ttPbjk-HEXe4wp3djKkKv9RloDtRA2Cut6Aw-djKSX9WI0cb28EvCand6ZgwPmTgZVUNTKvcnsdZj9zdvyzSVGB29RUIWBNjkM_9b1t_2bg5gLorYttpnsCLbTW_JIkCNcWTXeu7xehCzKh9LFdb407i6s-S-nAOxawI1Q9lK67NJ1thvkGvMpBRhJlAoU8EN50oHWwAJgnWfnh8cG3Bqw1OygFTDNp9BaZmE2z3hj3Kb0oWHu0mt-mx9_DYqSFPgIYwR6D348Qt5c_vWPjC8RvPbP6c-JRvO4Sv8nc0poLVH9_O9KY32qSYUXJ7J3aZn4oW-oH3-HHXn0II87IcuCvYKYlZdJn1p0jYObukXXJRab2Bm29zvxdIfVu1kQSSq4rgaT5Co3WSexSFaOEjQv8lV5k9uUYn3mgymr-vg_fZzQg1yx6uge01Z8YxWEFteOQedXBg66eRKUwLck1SYDVvjuVWbUsMvFYEk5MrW43301yZStOWMjBRz6BigYxzDPtoDfWyT7fUeZ6uen9h3rSQbMM4oUVPqEz_Gh2YclPMQg4z-kTwl5cpFbDd3YVx-bsHaee1cv503psdEPYLGQVmrENyAdXUKj9kNg_0j5S8AdQv0A7xcw5lDmdMCVvmQT0Yt7YX8ycovghywehWe5a3Q4nso2XmfJ8HV4QtQAhb6bcyyJXR-nTN9StkFVAEg1W3439giCe1LPxH9i986mtGgGJI_ABymMdWhGr4UUtMpY2qJX6rfKeKJVD5zG9YbFMs2dDujSkEZRkNwR1nnzqW0aH0rQ=w1032-h970-no?authuser=0);
