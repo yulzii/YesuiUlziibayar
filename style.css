@@ -188,12 +188,11 @@ p{
 .page-header{
     position: absolute;
     width: fit-content;
-    margin-left:10%;
     font-size: 5em;
 }
 
 #about-header {
-  
+  margin-left:10%;
   background: linear-gradient(180deg, #F0C5EE, #136570); /* Adjust the angle and colors as needed */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -214,15 +213,92 @@ p{
   color: transparent; /* Fallback for browsers that do not support background-clip */
 }
 
+
+/*************Experience Section*************/
+#experience-header{
+  margin-top:-5%;
+  margin-left:39.2%;
+}
+
 #experience{
   height: 100vh;
   color: rgb(255, 255, 255);
 }
 
+.styled-table::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  height: 95%;
+  width: 4px;
+  background: white;
+}
+
+.duration::before {
+  content:"";
+  position: absolute;
+  font-size: large;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 10px;
+  z-index: 5;
+  left: 49.6%;
+}
+
+.duration {
+  font-size: medium;
+  text-transform: uppercase;
+}
+
+.durationLeft {
+  text-align: right;
+}
+
+.styled-table {
+  font-family: Gotham, Helvetica, Arial, sans-serif;
+  padding-top: 2.5%;
+  width: 100%;
+  
+  border-collapse: separate; /* Ensure borders are collapsed */
+  border-spacing: 180px 0;
+}
+
+.position, .company {
+  padding-bottom: .5rem;
+}
+
+.position {
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.company {
+  font-size: 15px;
+  color: rgb(114, 207, 192);
+  /* text-transform: uppercase; */
+}
+
+.description {
+  font-size: medium;
+  /* text-transform: uppercase; */
+}
+
+.styled-table .shaded {
+  border: none;
+  border-radius: 20px;
+  padding: 25px;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0.288); /* Dark transparent color */
+}
+
+/********************************************/
+
 #skills{
   height: 50vh;
 
 }
+
 
 /*
 .grid-container {
