@@ -255,13 +255,16 @@ p{
   text-align: right;
 }
 
-.styled-table {
+.styled-table{
   font-family: Gotham, Helvetica, Arial, sans-serif;
   padding-top: 2.5%;
   width: 100%;
   
   border-collapse: separate; /* Ensure borders are collapsed */
   border-spacing: 180px 0;
+}
+.styled-table td{
+  border-radius: 20px;
 }
 
 .position, .company {
@@ -286,11 +289,16 @@ p{
 
 .styled-table .shaded {
   border: none;
-  border-radius: 20px;
   padding: 25px;
   height: fit-content;
   background-color: rgba(0, 0, 0, 0.288); /* Dark transparent color */
 }
+
+.styled-table .hovered{
+  background-color: rgba(97, 238, 248, 0.164);
+}
+
+
 
 /********************************************/
 
