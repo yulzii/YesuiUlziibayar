@@ -234,7 +234,7 @@ p{
   background: white;
 }
 
-.duration::before {
+.timeline-marker {
   content:"";
   position: absolute;
   font-size: large;
@@ -242,7 +242,7 @@ p{
   height: 20px;
   background: white;
   border-radius: 10px;
-  z-index: 5;
+  z-index: 1;
   left: 49.6%;
 }
 
@@ -294,10 +294,12 @@ p{
   background-color: rgba(0, 0, 0, 0.288); /* Dark transparent color */
 }
 
-.styled-table .hovered{
-  background-color: rgba(97, 238, 248, 0.164);
+.styled-table .hovered {
+  background-color: rgba(19, 195, 207, 0.164);
 }
-
+.styled-table tr td .hovered{
+  background-color: rgb(35, 159, 175);
+}
 
 
 /********************************************/
@@ -343,7 +345,8 @@ p{
 }
 
 #resumeBtn:hover {
-  background-color:#114a51; 
+  /* background-color:#114a51;  */
+  background-color: rgb(35, 159, 175);
 }
 
 
@@ -382,7 +385,69 @@ p{
   font-size:x-large;
 }
 
+.skills-canvas {
+  /* width: 50%; */
+  margin-left:4.5%;
+  border-spacing: 5px;
+  background-color: rgba(255, 255, 255, 0.184);
+}
 
+.skill-category {
+  display: inline-block;
+  font-size: xx-large;
+  color: white;
+  margin-left: 14%;
+}
+
+#tech {
+  margin-left: 22%;
+  
+}
+
+#soft {
+  margin-left: 24%;
+  
+}
+
+#projects {
+  margin-top: 10%;
+  padding-bottom: 20%;
+}
+
+#contact {
+  margin-top: 20%;
+}
+
+#contact .page-header{
+  margin-left: 37%;
+}
+
+.form {
+  position: relative;
+  margin-left: 37%;
+  padding-top: 10%;
+}
+/* .contact-box {
+  content: '';
+  width: 50rem;
+  height: 30rem;
+  /* background-color: rgba(78, 227, 247, 0.5);
+  margin-left: 25%;
+  margin-top: 10%;
+  position: absolute;
+} 
+*/
+
+
+.contact-icon {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding-right: 2%;
+}
+
+.icon-wrapper {
+  margin-left: 37%;
+}
 
 /* @media screen and (min-width: 600px){ */
 /* #text {
@@ -452,7 +517,6 @@ div#dot {
   background-position: center;
   position: absolute;
   display: inline-block;
-
   border: 10px solid beige;
 }
 
