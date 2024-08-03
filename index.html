@@ -24,7 +24,6 @@
         <li><a class= "nav-tab" id="experiencebtn" href="#experience-header">Experience</a></li>
         <li><a class= "nav-tab" id="skillsbtn" href="#skills">Skills</a></li>
         <li><a class= "nav-tab" id="experiencebtn" href="#projects">Projects</a></li>
-        <li><a class= "nav-tab" id="contactbtn" href="#contact">Contact</a></li>
         
       </ul>
       <button id="resumeBtn">Resume</button>
@@ -89,82 +88,115 @@
 
     <!-- Your website content here -->
     <section id="experience">
-      <div>
+      <div class="experience-div">
         <h2 id="experience-header" class="page-header">Experience</h2></div>
+      <div class="table-div">
         <table class="styled-table">
-          <tr>
+          <tr class = point>
             <td>
-              <div class="timeline-marker"></div>
-              <div class="duration durationLeft">September 2021 - May 2024</div>
-            </td>
-            <td class="shaded">
-              <div class="position">University of Wisconsin - Madison</div>
-              <div class="company">College of Letters and Sciences</div>
-              <div class="description">Earned Bachelor of Science degrees studying Computer Science and Data Science along with a certificate in Digital Studies through which I studied human interaction and ethics in computer science.</div>
+              <td>
+                <div class="duration durationLeft">September 2021 - May 2024</div>
+              </td>
+              <td class="marker">
+                <div class="timeline-line"></div>
+                <div class="timeline-marker"></div>
+              </td>
+              <td class="shaded">
+                <div class="position">University of Wisconsin - Madison</div>
+                <div class="company">College of Letters and Sciences</div>
+                <div class="description">Earned Bachelor of Science degrees studying Computer Science and Data Science along with a certificate in Digital Studies through which I studied human interaction and ethics in computer science.</div>
+              </td>
             </td>
           </tr>
           <tr>
+            <td>
+              <!-- <div class="timeline-marker"></div> -->
               <td class="shaded">
                 <div class="position">Web Editor</div>
                 <div class="company">Wisconsin Historical Society</div>
                 <div class="description">Published 5+ websites daily, employing HTML for content updates and leveraging GitLab for seamless integration. Spearheaded a project to analyze web traffic, and optimize website efficiency using APIs.</div>
               </td>
               <td>
+                <!-- <div class="timeline-line"></div> -->
                 <div class="timeline-marker"></div>
+              </td>
+              <td>
                 <div class="duration durationRight">February 2023 - April 2024</div>
               </td>
+            </td>
           </tr>
           <tr>
+            <td>
               <td>
-                <div class="timeline-marker"></div>
                 <div class="duration durationLeft">June - August 2023</div>
+              </td>
+              <td>
+                <!-- <div class="timeline-line"></div> -->
+                <div class="timeline-marker"></div>
               </td>
               <td class="shaded">
                 <div class="position">Network Core Integration Engineering Intern</div>
                 <div class="company">US Cellular</div>
                 <div class="description">Enhanced coverage of the IMS core architecture by updating the ADCs following rigorous review and testing protocols. Elevated customer satisfaction and safety in Nebraska by expanding coverage of the *55 emergency code.</div>
               </td>
+            </td>
           </tr>
           <tr>
-            <td class="shaded">
-              <div class="position">Mathnasium Tutor </div>
-              <div class="company">Mathnasium of Buffalo Grove </div>
-              <div class="description">Developed tailored mathematics lesson plans for diverse student demographics, ranging from elementary to 12th grade. Proficiently coordinated concurrent tutoring sessions, fostering student engagement with personalized feedback.</div>
-            </td>
             <td>
-              <div class="timeline-marker"></div>
-              <div class="duration durationRight">June - September 2022</div>
-            </td>
+              <td class="shaded">
+                <div class="position">Mathnasium Tutor </div>
+                <div class="company">Mathnasium of Buffalo Grove </div>
+                <div class="description">Developed tailored mathematics lesson plans for diverse student demographics, ranging from elementary to 12th grade. Proficiently coordinated concurrent tutoring sessions, fostering student engagement with personalized feedback.</div>
+              </td>
+              <td>
+                <!-- <div class="timeline-line"></div> -->
+                <div class="timeline-marker"></div>
+              </td>
+              <td>
+                <div class="duration durationRight">June - September 2022</div>
+              </td>
+          </td>
         </tr>
         <tr>
+          <td>
             <td>
-              <div class="timeline-marker"></div>
               <div class="duration durationLeft">June - July 2022</div>
+            </td>
+            <td>
+              <!-- <div class="timeline-line"></div> -->
+              <div class="timeline-marker"></div>
             </td>
             <td class="shaded">
               <div class="position">Business Development Sales Representative</div>
               <div class="company">Swoop Business Solutions</div>
               <div class="description">Executed targeted outreach through 200+ daily calls, increasing client engagement by 2% appointment conversion rate. Cultivated strong relationships through proactive follow-ups, boosting overall client satisfaction and retention.</div>
             </td>
+          </td>
           </tr>
         </table>
+      </div>
     </section>
 
     <section id="skills">
       <!-- Skills -->
-      <h2 class="page-header"></h2>
-      <h3 class="skill-category" id="lang">Languages</h3><h3 class="skill-category" id="tech">Technologies</h3><h3 class="skill-category" id="soft">Soft Skills</h3>
-      <canvas id="languages-canvas" class="skills-canvas"></canvas>
-      <canvas id="technologies-canvas"class="skills-canvas"></canvas>
-      <canvas id="softskills-canvas"class="skills-canvas"></canvas>
-
+      <div class="skill-section">
+        <h2 class="page-header"></h2>
+        <div class="skill-category-names">
+          <h3 class="skill-category" id="lang">Languages</h3><h3 class="skill-category" id="tech">Technologies</h3><h3 class="skill-category" id="soft">Soft Skills</h3>
+        </div>
+        <div class="skill-canvases">
+          <canvas id="languages-canvas" class="skills-canvas"></canvas>
+          <canvas id="technologies-canvas"class="skills-canvas"></canvas>
+          <canvas id="softskills-canvas"class="skills-canvas"></canvas>
+        </div>
+      </div>
     </section>
     <section id="projects">
       <div>
         <h2 class="page-header">Projects</h2>
       </div>
     </section>
-    <section id="contact">
+    <!-- <section id="contact">
       <h2 class="page-header">Contact Me!</h2>
       <div class="contact-box"></div>
       <form id="contact-form" class="form">
@@ -177,22 +209,26 @@
         <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
         <button type="submit">Send</button>
     </form>
-      <div class="icon-wrapper">
-        <h3>My contact info:</h3>
-        <a class="contact-icon" href="mailto:yesuiulziibayar@gmail.com" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a class="contact-icon" href="tel:+17735959018" aria-label="Phone">
-          <i class="fas fa-phone"></i>
-        </a>
-        <a class="contact-icon" href="https://www.linkedin.com/in/yesuiulziibayar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-      </div>
-    </section>
+      
+    </section> -->
   </main>
   <footer>
+    <div class="icon-wrapper">
+      <h3>Reach me through:</h3>
+      <a class="contact-icon" href="mailto:yesuiulziibayar@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a class="contact-icon" href="tel:+17735959018" aria-label="Phone">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a class="contact-icon" href="https://www.linkedin.com/in/yesuiulziibayar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="contact-icon" href="https://github.com/yulzii/YesuiUlziibayar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+    </div>
     <p>Copyright ©2024 Yesui Ulziibayar</p>
   </footer>
 </body>
