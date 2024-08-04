@@ -9,6 +9,20 @@
   z-index: 5;
 }
 
+body {
+  overflow-x: hidden;
+  margin: 0;
+  width: 100vw;
+  background-color: #136570;
+  color: #F0C5EE;
+}
+
+p{
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+
 /********** portfolio text animation **********/
 @keyframes fadeIn {
   from {
@@ -93,6 +107,20 @@
   z-index: 2;
 }
 /********************************************/
+/***************Profile Image****************/
+#profile-pic {
+  margin-left: -5vh;
+  margin-top: 10vh;
+  object-fit: cover;
+  width: 30vw;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  display: inline-block;
+  border: 10px solid beige;
+}
+/********************************************/
 /***********Scroll Arrow Animation***********/
 @keyframes moveUp {
   from {
@@ -131,23 +159,6 @@
   transition: opacity 0.1s ease;
 }
 /********************************************/
-body {
-  overflow-x: hidden;
-  margin: 0;
-  width: 100vw;
-  background-color: #136570;
-  color: #F0C5EE;
-}
-
-p{
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
-#about{
-  height: 100vh;
-}
-
 /*************Wave SVG Animation*************/
 .wave-transition{
   margin-top: -20vh;
@@ -161,24 +172,28 @@ p{
 }
 
 
-.wave-transition:hover #wave1{
+ #wave1.wave1hover{
     
     transition: all 20s ease;
     transform: translateX(0%);
 }
 
-.wave-transition:hover #wave2{
+ #wave2.wave2hover{
     
     transition: all 11s ease;
     transform: translateX(-40%);
 }
 
-.wave-transition:hover #wave3{
+ #wave3.wave3hover{
     transition: all 17s ease;
     transform: translateX(-10%);
 } 
 
 /********************************************/
+/***************About Section****************/
+#about{
+  height: 100vh;
+}
 
 .svg-text{
     margin-top: -30em;
@@ -211,25 +226,21 @@ p{
   background-clip: text; /* For other browsers (without webkit prefix) */
   color: transparent; /* Fallback for browsers that do not support background-clip */
 }
-
-
+/********************************************/
 /*************Experience Section*************/
+.experience-section {
+  position: relative;
+  /* border: 10px solid white; */
+}
 #experience-header{
+  text-align: center;
   margin-top:-5%;
-  margin-left:39.2%;
+  width: 100%;
 }
 
 #experience{
-  height: 100vh;
   color: rgb(255, 255, 255);
 }
-
-
-/* .timeline-cell {
-  position: relative;
-  width: 50vw; 
-  vertical-align: top;
-} */
 
 .timeline-line {
   content: "";
@@ -266,7 +277,7 @@ p{
 
 .table-div {
   position: relative;
-  margin-bottom: 50%;
+  margin-bottom: 5%;
 }
 
 .styled-table{
@@ -316,33 +327,12 @@ p{
 .styled-table tr td .hovered{
   background-color: rgb(35, 159, 175);
 }
-
-
 /********************************************/
 
 #skills{
-  height: 50vh;
+  height: auto;
 
 }
-
-
-/*
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr); /* 2 columns 
-  grid-gap: 20px; /* Gap between items 
-}
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgray;
-  height: 100px; /* Adjust as needed */
-  /* writing-mode: vertical-rl; Vertical text */
-  /* text-orientation: upright; Ensure text is upright 
-}
- */
 
 #resumeBtn {
   padding: 15px;
@@ -365,31 +355,6 @@ p{
   background-color: rgb(35, 159, 175);
 }
 
-
-
-/* click me button
-#resumeBtn{
-    background-color:#0D3B40; /* Green 
-    position: absolute;
-    right: 5%;
-    color: white;
-    
-    border-block-color: white;
-    cursor: pointer;
-    width: 90px;
-    height: 40px;
-    padding: 2px 4px;
-    font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.3s ease-out;
-    transition: background-color 0.3s ease-out;
-}
-
-#resumeBtn:active {
-  transform: scale(0.95);
-} */
-
 .home> .text-container{
     width: 100vw;
     height: 70vh;
@@ -401,11 +366,7 @@ p{
   font-size:x-large;
 }
 
-.skill-section {
-  position: relative;
-  margin-top: 15%;
-}
-
+/**************Skills Section**************/
 .skill-canvases {
   display: flex;
   justify-content: space-between; /* Distributes columns evenly */
@@ -415,7 +376,7 @@ p{
 }
 
 .skills-canvas {
-  width: 30%; /* Set the width to 30% for consistent spacing */
+  width: 30%;
 
   background-color: rgba(255, 255, 255, 0.184);
 }
@@ -429,28 +390,45 @@ p{
   width: 78vw;
   margin-left: 10vw;
 }
-
-/* .skill-category {
-  width: 32vw;
-  padding-left: 11%;
-} */
-
-
-/* #tech {
-  margin-left: 22%;
-  
-}
-
-#soft {
-  margin-left: 24%;
-  
-} */
+/********************************************/
+/**************Projects Section**************/
 
 #projects {
-  margin-top: 10%;
-  padding-bottom: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
+
+
+#projects .page-header {
+  position: relative;
+  text-align: center;
+  width: 100vw;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3vw 3vh;
+  max-width: 100vw;
+}
+
+.project-card {
+  border: 2px solid #0D3B40;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 25vh;
+  width: 400px;
+  transition: transform .3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+/********************************************/
 /* #contact {
   margin-top: 20%;
 }
@@ -474,15 +452,6 @@ p{
   position: absolute;
 } 
 */
-
-
-
-/* @media screen and (min-width: 600px){ */
-/* #text {
-   padding-left: 100px;
-    
-  }
-} */
 /*scaled by screen size: animated text*/
 @media screen and (min-width: 600px){
   #text, #dot {
@@ -496,8 +465,6 @@ p{
     
   }
 }
-
-
 
 /*butterfly*/
 #animation-container {
@@ -530,42 +497,21 @@ div#dot {
 
 }
 
-
-
-/*image*/
-
-#profile-pic {
-  margin-left: -5vh;
-  margin-top: 10vh;
-  object-fit: cover;
-  width: 30vw;
-  height: 40vh;
-  background-image: url(https://lh3.googleusercontent.com/clUznJxMnYDvOtcUDF9F2wKz6rvEsT0AchRZxsWGWuo8BSGoFy_hb0fpMTKNQ_C3-mELL86Egj0YnKs0lAA5mSeZNflczOvjeL6omw35eiLc-7tCPRLxtMd91KcNWqjrnIQ8il8XA0GXvSKPMAx1-rENaoxqb5hlYplEclZ6rLUd7GAjHlM7ttPbjk-HEXe4wp3djKkKv9RloDtRA2Cut6Aw-djKSX9WI0cb28EvCand6ZgwPmTgZVUNTKvcnsdZj9zdvyzSVGB29RUIWBNjkM_9b1t_2bg5gLorYttpnsCLbTW_JIkCNcWTXeu7xehCzKh9LFdb407i6s-S-nAOxawI1Q9lK67NJ1thvkGvMpBRhJlAoU8EN50oHWwAJgnWfnh8cG3Bqw1OygFTDNp9BaZmE2z3hj3Kb0oWHu0mt-mx9_DYqSFPgIYwR6D348Qt5c_vWPjC8RvPbP6c-JRvO4Sv8nc0poLVH9_O9KY32qSYUXJ7J3aZn4oW-oH3-HHXn0II87IcuCvYKYlZdJn1p0jYObukXXJRab2Bm29zvxdIfVu1kQSSq4rgaT5Co3WSexSFaOEjQv8lV5k9uUYn3mgymr-vg_fZzQg1yx6uge01Z8YxWEFteOQedXBg66eRKUwLck1SYDVvjuVWbUsMvFYEk5MrW43301yZStOWMjBRz6BigYxzDPtoDfWyT7fUeZ6uen9h3rSQbMM4oUVPqEz_Gh2YclPMQg4z-kTwl5cpFbDd3YVx-bsHaee1cv503psdEPYLGQVmrENyAdXUKj9kNg_0j5S8AdQv0A7xcw5lDmdMCVvmQT0Yt7YX8ycovghywehWe5a3Q4nso2XmfJ8HV4QtQAhb6bcyyJXR-nTN9StkFVAEg1W3439giCe1LPxH9i986mtGgGJI_ABymMdWhGr4UUtMpY2qJX6rfKeKJVD5zG9YbFMs2dDujSkEZRkNwR1nnzqW0aH0rQ=w1032-h970-no?authuser=0);
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  display: inline-block;
-  border: 10px solid beige;
-}
-
-
-
 .icon-wrapper {
   display: inline-flexbox;
   padding-top: 1%;
 }
 
 .contact-icon {
-
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding-right: 1%;
 }
 
-
 footer {
-  margin-top: 10%;
+  /* margin-top: 10%; */
   text-align: center;
   background-color: #00000052;
   padding-bottom: 1%;
+  border-top: 2px solid pink;
 }

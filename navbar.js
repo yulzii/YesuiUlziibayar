@@ -31,18 +31,33 @@ document.addEventListener("DOMContentLoaded", () => {
     
     //change background color when row is hovered over
     document.querySelectorAll('.styled-table tr').forEach(row => {
-    row.addEventListener('mouseover', () => {
-        row.querySelectorAll('.shaded, .timeline-marker').forEach(cell => {
-            cell.classList.add('hovered');
+        row.addEventListener('mouseover', () => {
+            row.querySelectorAll('.shaded, .timeline-marker').forEach(cell => {
+                cell.classList.add('hovered');
+            });
+        });
+        row.addEventListener('mouseout', () => {
+            row.querySelectorAll('.shaded, .timeline-marker').forEach(cell => {
+                cell.classList.remove('hovered');
+            });
         });
     });
-    row.addEventListener('mouseout', () => {
-        row.querySelectorAll('.shaded, .timeline-marker').forEach(cell => {
-            cell.classList.remove('hovered');
-        });
-    });
-});
 
+    const abtSection = document.getElementById("about");
+    
+    const wave1 = document.getElementById("wave1");
+    const wave2 = document.getElementById("wave2");
+    const wave3 = document.getElementById("wave3");
+    abtSection.addEventListener('mouseover', () => {
+        wave1.classList.add("wave1hover");
+        wave2.classList.add("wave2hover");
+        wave3.classList.add("wave3hover");
+    });
+    abtSection.addEventListener('mouseout', () => {
+        wave1.classList.remove("wave1hover");
+        wave2.classList.remove("wave2hover");
+        wave3.classList.remove("wave3hover");
+    });
 
 });
 
@@ -117,7 +132,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const softskills_bubbles = [
         { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'cold calling', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
-        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'communication', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
+        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'organized', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
+        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'adaptable', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
+        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'communicative', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
         { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'tutoring', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()}
     ];
 
