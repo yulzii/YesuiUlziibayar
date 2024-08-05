@@ -364,24 +364,21 @@ body {
   display: flex;
   justify-content: space-between; /* Distributes columns evenly */
   flex-basis: 30%;
-  margin-left: 1%;
-  margin-right: 2%;
+  margin-left: 2%;
+  /* margin-right: 2%;  */
 }
 
 .skills-canvas {
-  width: 30%;
-
+  width: 90%;
   background-color: rgba(255, 255, 255, 0.184);
 }
 
 .skill-category-names {
   display: inline-flex;
-  justify-content: space-between; /* Distributes category names evenly */
-  flex-basis: 30%;
-  font-size: xx-large;
+  justify-content:space-around;
+  width: 100%;
+  font-size: x-large;
   color: white;
-  width: 78vw;
-  margin-left: 10vw;
 }
 /********************************************/
 /**************Projects Section**************/
@@ -458,6 +455,67 @@ body {
     margin-left: 5vw;
     width: fit-content;
     font-size: medium;
+  }
+
+  .skill-canvases {
+    display:block;
+    width: 100vw;
+    margin-top: 5vh;
+    justify-content: center;
+  }
+  
+  .skills-canvas {
+    width: 80vw;
+    margin-left: 8%;
+    margin-bottom: 5vh;
+    background-color: rgba(255, 255, 255, 0.184);
+  }
+
+  #canvas-div-lang::before {
+    content: "Languages";
+    color: white;
+    font-size: x-large;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    margin-top: -30px;
+  }
+  
+  #canvas-div-tech::before {
+    content: "Technologies";
+    color: white;
+    font-size: x-large;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    margin-top: -30px;
+  }
+  
+  #canvas-div-soft::before {
+    content: "Soft Skills";
+    color: white;
+    font-size: x-large;
+    width: 100vw;
+    position: absolute;
+    text-align: center;
+    margin-top: -30px;
+  }
+  
+/* 
+  #tech {
+    position: absolute;
+    justify-content: center;
+    margin-top: 73vh;
+  }
+
+  #soft {
+    position: absolute;
+    justify-content: center;
+    margin-top: 134vh;
+  } */
+  
+  .skill-category-names {
+    visibility: hidden;
   }
   
 }
