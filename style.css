@@ -64,7 +64,7 @@ body {
 }
 #navbar li {
   position: relative;
-  padding: 10px 0 0px 28px;
+  padding-left: 28px;
 }
 #navbar a  {
   text-decoration: none;
@@ -488,7 +488,21 @@ body {
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.288); /* Dark transparent color */
   }
+
   
+  #navbar ul {
+    position: relative;
+    padding-left: 13px;
+  }
+  
+  #navbar li {
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  #navbar a  {
+    font-size: 13px;
+  }
 }
 
 
