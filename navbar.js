@@ -64,6 +64,30 @@ document.addEventListener("DOMContentLoaded", () => {
         wave3.classList.remove("wave3hover");
     });
 
+
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('#navbar ul li a');
+
+    const makeActive = (link) => {
+        navLinks.forEach((navLink) => navLink.classList.remove('active'));
+        link.classList.add('active');
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            const activeLink = document.querySelector(`#navbar ul li a[href="#${id}"]`);
+            makeActive(activeLink);
+        }
+        });
+    }, { threshold: 0.4 }); // Adjust threshold as needed
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
+
 });
 
 //resume pdf display when resume button is clicked
