@@ -167,6 +167,7 @@ body {
 #wave1, #wave2, #wave3 {
     transition: all 1s ease;
     transform: translateX(-20%);
+    overflow: hidden;
 }
 
 
@@ -410,7 +411,7 @@ body {
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 25vh;
-  width: 400px;
+  width: 380px;
   transition: transform .1s ease;
 }
 
@@ -620,9 +621,12 @@ body {
 }
 
 .contact-icon {
+  font-size: x-large;
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding-right: 1%;
+  color: white;
+  padding-right: 20px;
+  display: inline-flex;
+  align-items: center;
 }
 
 footer {

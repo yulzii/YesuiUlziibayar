@@ -20,11 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const maxScroll = 200;
             let opacity = 1 - Math.min(scrollTop / maxScroll, 1);
             scrollArrowBtn.style.opacity = opacity;
+            if(scrollTop<=maxScroll){
+                scrollArrowBtn.hidden = false;
+            }
+            else {
+                scrollArrowBtn.hidden = true;
+            }
         });
     
         scrollArrowBtn.addEventListener("click", () => {
             experienceSection.scrollIntoView({ behavior: "smooth" });
-            
         });
         
     }
