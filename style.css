@@ -1,3 +1,8 @@
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .home {
   margin-top:-20vh;
   padding-top: 10vh;
@@ -18,12 +23,6 @@ body {
   background-color: #136570;
   color: #F0C5EE;
 }
-
-/* p{
-  max-width: 100vw;
-  max-height: 100vh;
-} */
-
 
 /********** portfolio text animation **********/
 @keyframes fadeIn {
@@ -520,19 +519,6 @@ body {
     visibility: hidden;
   }
   
-}
-
-@media (max-width: 768px) { 
-  .wave-transition {
-    margin-top: -10vh;
-    transform: scaleY(100%); 
-    overflow-x: hidden;
-  }
-
-  #wave1, #wave2, #wave3 {
-    transform: translateX(0); 
-    overflow-x: hidden;
-  }
 }
 
 @media screen and (min-width: 600px){
