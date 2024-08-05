@@ -421,6 +421,76 @@ body {
 }
 /********************************************/
 /*scaled by screen size: animated text*/
+@media screen and (max-width: 460px) {
+  
+  .styled-table {
+    margin-bottom: -10vh;
+  }
+  .timeline-line {
+    content: "";
+    position: absolute;
+    font-size: large;
+    width: 4px;
+    height:100%;
+    background: white;
+    border-radius: 10px;
+    z-index: 1;
+    left: 7px;
+    transform: translateY(-12%); 
+  }
+
+  .timeline-marker {
+    visibility: hidden;
+  }
+  
+  .duration::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    font-size: large;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 10px;
+    z-index: 1;
+    margin-left: -30px;
+  }
+
+  .duration {
+    position: absolute;
+    left: 30px;
+    margin-top: -20vh;
+  }
+
+  .styled-table tr{
+    border-radius: 20px;
+    height: 32vh;
+  }
+
+  .position {
+    font-size: medium;
+    text-transform: uppercase;
+  }
+
+  .company {
+    font-size: small;
+    color: rgb(114, 207, 192);
+  }
+
+  .description {
+    font-size: small;
+  }
+
+  .styled-table .shaded {
+    padding: 25px;
+    position: absolute;
+    left: 20px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.288); /* Dark transparent color */
+  }
+  
+}
+
 
 @media screen and (max-width: 600px){
   .text-dot #text, .text-dot #dot{
