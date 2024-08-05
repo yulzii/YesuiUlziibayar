@@ -12,7 +12,7 @@ window.addEventListener("scroll", () => {
 //animated scroll button on home
 document.addEventListener("DOMContentLoaded", () => {
     const scrollArrowBtn = document.getElementById("scrollArrowBtn");
-    const experienceSection = document.getElementById("experience");
+    const aboutSection = document.getElementById("about");
 
     if (scrollArrowBtn) {
         window.addEventListener("scroll", () => {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     
         scrollArrowBtn.addEventListener("click", () => {
-            experienceSection.scrollIntoView({ behavior: "smooth" });
+            aboutSection.scrollIntoView({ behavior: "smooth" });
         });
         
     }
