@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
             makeActive(activeLink);
         }
         });
-    }, { threshold: 0.4 }); // Adjust threshold as needed
+    }, { threshold: 0.4 });
 
     sections.forEach((section) => {
         observer.observe(section);
