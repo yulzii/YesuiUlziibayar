@@ -1,6 +1,8 @@
 .home {
   margin-top:-20vh;
-  padding-bottom:40vh;
+  padding-top: 10vh;
+  padding-bottom:30vh;
+  margin-bottom: -20vh;
   background-color: #0D3B40;
 }
 
@@ -17,10 +19,10 @@ body {
   color: #F0C5EE;
 }
 
-p{
+/* p{
   max-width: 100vw;
   max-height: 100vh;
-}
+} */
 
 
 /********** portfolio text animation **********/
@@ -109,15 +111,12 @@ p{
 /********************************************/
 /***************Profile Image****************/
 #profile-pic {
-  margin-left: -5vh;
-  margin-top: 10vh;
   object-fit: cover;
   width: 30vw;
   height: 40vh;
   background-size: cover;
   background-position: center;
-  position: absolute;
-  display: inline-block;
+  position: relative;
   border: 10px solid beige;
 }
 /********************************************/
@@ -144,14 +143,11 @@ p{
   animation: moveUp, moveDown 2s ease-in-out infinite alternate;
   color: white;
   position: fixed;
-  margin-left: 45%;
-  margin-top: 44%;
-  top: 2%;
+  width: 100%;
+  text-align: center;
+  bottom: 2%;
   z-index: 2;
   opacity: .8;
-}
-#scrollArrow {
-  margin-left: 45%;
 }
 
 .invisible {
@@ -161,9 +157,11 @@ p{
 /********************************************/
 /*************Wave SVG Animation*************/
 .wave-transition{
-  margin-top: -20vh;
+  margin-top: -5vh;
   transform: scaleY(150%);
   position: relative;
+  height: auto;
+  /* border: 5px solid white; */
 }
 
 #wave1, #wave2, #wave3 {
@@ -192,17 +190,17 @@ p{
 /********************************************/
 /***************About Section****************/
 #about{
-  height: 100vh;
+  position: relative;
 }
 
 .svg-text{
-    margin-top: -30em;
+    margin-top: -32em;
 }
 
 .page-header{
-    position: absolute;
-    width: fit-content;
-    font-size: 5em;
+  position: absolute;
+  width: fit-content;
+  font-size: 5em;
 }
 
 #about-header {
@@ -210,28 +208,29 @@ p{
   background: linear-gradient(180deg, #F0C5EE, #136570); /* Adjust the angle and colors as needed */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* For other browsers (without webkit prefix) */
-  color: transparent; /* Fallback for browsers that do not support background-clip */
+  background-clip: text; 
+  color: transparent;
 }
 
 #about-text{
   position: relative;
   margin-left: 45%;
-  margin-right: 10%;
+  margin-right: 10%; 
   width: fit-content;
   font-size: x-large;
   background: linear-gradient(180deg, #F0C5EE, #136570); /* Adjust the angle and colors as needed */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text; /* For other browsers (without webkit prefix) */
-  color: transparent; /* Fallback for browsers that do not support background-clip */
+  background-clip: text;
+  color: transparent;
 }
 /********************************************/
 /*************Experience Section*************/
 .experience-section {
   position: relative;
-  /* border: 10px solid white; */
+  margin-top: 20%;
 }
+
 #experience-header{
   text-align: center;
   margin-top:-5%;
@@ -285,7 +284,6 @@ p{
   font-family: Gotham, Helvetica, Arial, sans-serif;
   padding-top: 2.5vh;
   width: 100vw;
-  
   border-collapse: separate; /* Ensure borders are collapsed */
   border-spacing: 2.5vw 2.5vw;
   margin-left: -2vw;
@@ -307,12 +305,10 @@ p{
 .company {
   font-size: 15px;
   color: rgb(114, 207, 192);
-  /* text-transform: uppercase; */
 }
 
 .description {
   font-size: medium;
-  /* text-transform: uppercase; */
 }
 
 .styled-table .shaded {
@@ -351,20 +347,17 @@ p{
 }
 
 #resumeBtn:hover {
-  /* background-color:#114a51;  */
   background-color: rgb(35, 159, 175);
 }
 
 .home> .text-container{
-    width: 100vw;
-    height: 70vh;
-    transform: translate(10%,30%);
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  text-align: center;
+  /* transform: translate(10vw); */
 }
 
-#sub-blurb {
-  transform: translate(10%,-16vh);
-  font-size:x-large;
-}
 
 /**************Skills Section**************/
 .skill-canvases {
@@ -421,7 +414,7 @@ p{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 25vh;
   width: 400px;
-  transition: transform .3s ease;
+  transition: transform .1s ease;
 }
 
 .project-card:hover {
@@ -429,40 +422,124 @@ p{
   transform: scale(1.05);
 }
 /********************************************/
-/* #contact {
-  margin-top: 20%;
-}
-
-#contact .page-header{
-  margin-left: 37%;
-}
-
-.form {
-  position: relative;
-  margin-left: 37%;
-  padding-top: 10%;
-} */
-/* .contact-box {
-  content: '';
-  width: 50rem;
-  height: 30rem;
-  /* background-color: rgba(78, 227, 247, 0.5);
-  margin-left: 25%;
-  margin-top: 10%;
-  position: absolute;
-} 
-*/
 /*scaled by screen size: animated text*/
+
+@media screen and (max-width: 600px){
+  .text-dot #text, .text-dot #dot{
+    display: inline;
+    font-size: 3em;
+  }
+
+  #profile-pic {
+    margin-top: 10%;
+    width: 70vw;
+  }
+
+  #sub-blurb {
+    font-size: medium;
+    width: 100vw;
+    text-align: center;
+    margin-top: -50vh;
+    margin-bottom: 50vh;
+    /* border: 5px solid white; */
+  }
+
+  
+  .page-header {
+    position: relative;
+    font-size: 3em;
+  }
+
+  #about-header {
+    margin-left: 5vw;
+  }
+
+  #about-text{
+    margin-left: 5vw;
+    width: fit-content;
+    font-size: medium;
+  }
+  
+}
+
 @media screen and (min-width: 600px){
   #text, #dot {
-    font-size: 7em;
-    
+    font-size: 4em;
+    float: left;
+  }
+
+  #text, #dot, #profile-pic{
+    display: inline;
+    transform: translateX(8vw);
+  } 
+  #profile-pic {
+    transform: translateX(5vw);
+
+  }
+  #sub-blurb {
+    font-size: large;
+    transform: translate(8vw,-25vh);
+  }
+  
+  .page-header {
+    position: relative;
+    font-size: 3em;
+  }
+
+  #about-header {
+    margin-left: 5vw;
+  }
+
+  #about-text{
+    margin-left: 5vw;
+    width: fit-content;
+    font-size: large;
+  }
+  
+  
+}
+
+@media screen and (min-width: 1080px){
+  #text, #dot {
+    font-size: 6em;
+    float: left;
+  }
+  
+  #sub-blurb {
+    font-size: x-large;
+    transform: translate(8vw,-15vh);
+  }
+
+  
+  .page-header{
+    position: absolute;
+    width: fit-content;
+    font-size: 5em;
+  }
+
+  #about-header {
+    margin-left:10%;
+  }
+
+  #about-text{
+    position: relative;
+    margin-left: 45%;
+    margin-right: 10%; 
+    width: fit-content;
+    font-size: x-large;
   }
 }
-@media screen and (max-width: 600px){
+
+
+@media screen and (min-width: 1800px){
   #text, #dot {
-    font-size: 3em;
-    
+    font-size: 7em;
+    float: left;
+  }
+  
+  #sub-blurb {
+    font-size: xx-large;
+    transform: translate(8vw,-15vh);
   }
 }
 
@@ -478,25 +555,7 @@ p{
 #dot {
   visibility: hidden;
 }
-@media screen and (max-width: 600px){
-div#text {
-    float: left
-}
-div#dot {
-    float: left;
-}
-}
-@media screen and (min-width: 600px){
-  div#text {
-    float: left
-}
-  div#dot {
-    float: left;
-    padding-right: 12%;
-}
-
-}
-
+/****************footer***************/
 .icon-wrapper {
   display: inline-flexbox;
   padding-top: 1%;
@@ -509,9 +568,9 @@ div#dot {
 }
 
 footer {
-  /* margin-top: 10%; */
   text-align: center;
   background-color: #00000052;
   padding-bottom: 1%;
   border-top: 2px solid pink;
 }
+/*************************************/
