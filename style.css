@@ -161,13 +161,14 @@ body {
   transform: scaleY(150%);
   position: relative;
   height: auto;
+  overflow-x: hidden;
   /* border: 5px solid white; */
 }
 
 #wave1, #wave2, #wave3 {
     transition: all 1s ease;
     transform: translateX(-20%);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 
