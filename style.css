@@ -426,6 +426,7 @@ body {
   .styled-table {
     margin-bottom: -10vh;
   }
+
   .timeline-line {
     content: "";
     position: absolute;
@@ -488,7 +489,6 @@ body {
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.288); /* Dark transparent color */
   }
-
   
   #navbar ul {
     position: relative;
@@ -523,9 +523,7 @@ body {
     text-align: center;
     margin-top: -50vh;
     margin-bottom: 50vh;
-    /* border: 5px solid white; */
   }
-
   
   .page-header {
     position: relative;
@@ -586,23 +584,14 @@ body {
     margin-top: -30px;
   }
   
-/* 
-  #tech {
-    position: absolute;
-    justify-content: center;
-    margin-top: 73vh;
-  }
-
-  #soft {
-    position: absolute;
-    justify-content: center;
-    margin-top: 134vh;
-  } */
-  
   .skill-category-names {
     visibility: hidden;
   }
-  
+
+  #resumeBtn {
+    padding: 11px;
+    width: 90px;
+  }
 }
 
 @media screen and (min-width: 600px){
