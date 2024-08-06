@@ -96,7 +96,10 @@ resumeBtn.addEventListener("click", () => {
     window.open("resume 2024.pdf", "_blank");
 });
 document.addEventListener('DOMContentLoaded', () => {
-    // Get canvas elements and contexts
+    
+    // const canvas0 = document.getElementById("large-canvas");
+    // const context0 = canvas0.getContext("2d");
+
     const canvas1 = document.getElementById("languages-canvas");
     const context1 = canvas1.getContext("2d");
 
@@ -107,6 +110,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const context3 = canvas3.getContext("2d");
 
     // Set canvas dimensions
+
+    // canvas0.width = window.innerWidth;
+    // canvas0.height = 300;
+
     canvas1.width = 500;
     canvas1.height = 500;
 
@@ -164,8 +171,16 @@ document.addEventListener('DOMContentLoaded', () => {
         { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'organized', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
         { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'adaptable', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
         { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'communicative', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
-        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'tutoring', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()}
+        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'collaborative', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
+        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'problem solver', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
+        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'creative', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()},
+        { x: generateRandLargeX(), y: generateRandLargeY(), radius: generateRadius(), content: 'detail-oriented', velocityX: generateRandVelocity(), velocityY: generateRandVelocity()}
+
     ];
+
+    // const dvdRadius=generateRadius();
+    // const dvd = { x: generateRandLargeX(), y: generateRandLargeY(), radiusX: dvdRadius*2, radiusY: dvdRadius, velocityX: generateRandVelocity(), velocityY: generateRandVelocity()};
+
 
     // Draw bubbles on canvas
     function drawBubble(bubble, context) {
@@ -184,8 +199,20 @@ document.addEventListener('DOMContentLoaded', () => {
         context.fillText(bubble.content, bubble.x, bubble.y);
     }
 
+    //dvd image has CC license
+    //author: David Thiel
+    //https://creativecommons.org/licenses/by-nc/4.0/  
+    // const dvdImage = new Image();
+    // dvdImage.src = 'resources/dvd_logo.png';
+    
+    // function drawImage(bubble, context, img) {
+    //     context.drawImage(img, bubble.x, bubble.y, bubble.radiusX, bubble.radiusY);
+    // }     
+
     // Animate bubbles
     function animate() {
+        
+        // context0.clearRect(0, 0, window.innerWidth, 300);
         context1.clearRect(0, 0, 500, 500);
         context2.clearRect(0, 0, 500, 500);
         context3.clearRect(0, 0, 500, 500);
@@ -204,6 +231,10 @@ document.addEventListener('DOMContentLoaded', () => {
             drawBubble(bubble, context3);
             updateBubblePosition(bubble, 500, 500);
         });
+
+        
+        // drawImage(dvd, context0, dvdImage);
+        // updateImagePosition(dvd, 500, 500);
 
         requestAnimationFrame(animate);
     }
@@ -230,5 +261,28 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    
+    // // Update bubble position and check boundaries
+    // function updateImagePosition(bubble, canvasWidth, canvasHeight) {
+    //     bubble.x += bubble.velocityX;
+    //     bubble.y += bubble.velocityY;
+
+    //     if (bubble.x <= 0) {
+    //         bubble.velocityX *= -1;
+    //     } else if (bubble.x + bubble.radiusX > canvasWidth) {
+    //         bubble.x = canvasWidth - bubble.radiusX;
+    //         bubble.velocityX *= -1;
+    //     }
+
+    //     if (bubble.y <= 0) {
+    //         bubble.velocityY *= -1;
+    //     } else if (bubble.y + bubble.radiusY > canvasHeight) {
+    //         bubble.y = canvasHeight - bubble.radiusY;
+    //         bubble.velocityY *= -1;
+    //     }
+    // }
+    // dvdImage.onload = () => {
+    //     animate();
+    // };
     animate();
 });
