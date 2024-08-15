@@ -10,6 +10,14 @@
   <meta name="author" content="Yesui Ulziibayar">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "./node_modules/three/build/three.module.js",
+            "three/examples/jsm/controls/OrbitControls": "./node_modules/three/examples/jsm/controls/OrbitControls.js"
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -53,7 +61,7 @@
 
   <main>
     <div id="scrollArrowBtn">
-      <p id="scrollArrowText" class="scrollArrowText">Scroll</p>
+      <p id="scrollArrowText" class="scrollArrowText">Scroll N Explore</p>
       <p id="scrollArrow" class="scrollArrow">↓</p>
     </div>
     <section id="about" class="about">
@@ -248,30 +256,54 @@
                   <p>Expo</p>
                   <p>React Native</p>
                   <p>JS</p>
-                </div>
+                </div>              
               </div>
               <iframe class="card-content" width="560" height="315" src="https://www.youtube.com/embed/02V2bK1Avk8?si=KU0zGuNF8oTiN1OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+
+              <div class="project-card">
+                <div class="card-details">
+                  <p>BadgerNews</p>
+                  <p>A React Native app utilizing UW-Madison's Badger News API to seamlessly manage POST and GET requests with async/await. The app offers an intuitive interface for filtering news by tags, allowing users to expand each article to view detailed information, including images, titles, authors, publication dates, links, and full content.</p>
+                  <div class="tools">
+                    <p>Expo</p>
+                    <p>React Native</p>
+                    <p>JS</p>
+                  </div>              
+                </div>
+                <iframe class="card-content" width="560" height="315" src="https://www.youtube.com/embed/QYMta2IiyUA?si=Rj0M2GX-Mhxj7YNx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
           </div>
           <div class="projects-header-div">
             <h2 class="projects-header">Graphics</h2>
           </div>
           
         <div class="project-cards-container">
-          <div class="project-card">
-            <p>title</p>
-            <p>description</p>
-            <img src="www.w3.org">
-          </div>
-          <div class="project-card">
-            <p>title</p>
-            <p>description</p>
-            <img src="www.w3.org">
-          </div>
           
           <div class="project-card">
-            <p>title</p>
-            <p>description</p>
-            <img src="www.w3.org">
+            <div class="card-details">
+              <p>Three.js Laptop</p>
+              <p>A laptop made by UV & Normal mapping a PNG image of a laptop to a geometry made with three.js.</p>
+              <div class="tools">
+                <p>Three.js</p>
+                <p>HTML</p>
+                <p>JS</p>
+              </div>              
+            </div>
+            <div id="laptop-canvas"></div>
+            <script type="module" src="/laptop.js"></script>
+          </div>
+        
+          <div class="project-card">
+            <div class="card-details">
+              <p>Three.js Earth</p>
+              <p>A spinning Earth made by roughness mapping an map of the Earth using three.js.</p>
+              <div class="tools">
+                <p>Three.js</p>
+                <p>HTML</p>
+                <p>JS</p>
+              </div>              
+            </div>
+            <div id="earth-canvas"></div>
+            <script type="module" src="/earth.js"></script>
           </div>
         </div>
 
