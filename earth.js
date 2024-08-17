@@ -1,6 +1,6 @@
 ////////////////// setup //////////////////
 import * as T from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { OrbitControls } from 'orbit';
 
 
 const scene = new T.Scene();
@@ -29,7 +29,7 @@ mesh.rotateY(-.1*Math.PI);
 mesh.rotateX(-.1*Math.PI);
 scene.add(mesh);
 
-let directionalLight = new T.DirectionalLight(0xffffff, 5); 
+let directionalLight = new T.DirectionalLight(0xffffff, 2); 
 directionalLight.position.set(2, 1, 2);
 scene.add(directionalLight);
 
