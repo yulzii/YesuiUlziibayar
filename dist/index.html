@@ -10,14 +10,14 @@
   <meta name="author" content="Yesui Ulziibayar">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- <script type="importmap">
+  <script type="importmap">
     {
         "imports": {
-            "three": "./node_modules/three/build/three.module.js",
-            "three/examples/jsm/controls/OrbitControls": "./node_modules/three/examples/jsm/controls/OrbitControls.js"
+            "three": "../node_modules/three/build/three.module.js",
+            "three/examples/jsm/controls/OrbitControls": "../node_modules/three/examples/jsm/controls/OrbitControls.js"
         }
     }
-    </script> -->
+    </script>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
           <p tabindex="0" id="text"></p>
           <p id="dot">.</p>
         </div>
-        <img id="profile-pic" src="resources/profile_pic.jpg" alt="Yesui Ulziibayar sits on the UW-Madison Bucky Badger statue copying its pose that looks out onto Lake Mendota." e="margin-top: -80px;">
+        <img id="profile-pic" src="./resources/profile_pic.jpg" alt="Yesui Ulziibayar sits on the UW-Madison Bucky Badger statue copying its pose that looks out onto Lake Mendota." e="margin-top: -80px;">
       </div>
       <div id="sub-blurb"><p>An aspiring Software Engineer and Data Scientist.</p></div>
 
@@ -55,9 +55,9 @@
     <!--butterfly animation-->
     <div id="animation-container"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
-    <script src="sketch.js"></script>
-    <script src="style.js"></script>
-    <script src="navbar.js"></script>
+    <script src="../sketch.js"></script>
+    <script src="../style.js"></script>
+    <script src="../navbar.js"></script>
 
   <main>
     <div id="scrollArrowBtn">
@@ -289,7 +289,7 @@
               </div>              
             </div>
             <div id="laptop-canvas"></div>
-            <script type="module" src="./laptop.js"></script>
+            <script type="module" src="../laptop.js"></script>
           </div>
         
           <div class="project-card">
@@ -303,20 +303,7 @@
               </div>              
             </div>
             <div id="earth-canvas"></div>
-            <script type="module" src="./earth.js"></script>
-          </div>
-        </div>
-
-        
-        <div class="projects-header-div">
-          <h2 class="projects-header">Other</h2>
-        </div>
-
-        <div class="project-cards-container">
-          <div class="project-card">
-            <p>title</p>
-            <p>description</p>
-            <img src="www.w3.org">
+            <script type="module" src="../earth.js"></script>
           </div>
         </div>
       </div>

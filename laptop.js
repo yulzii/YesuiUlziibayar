@@ -1,6 +1,6 @@
 ////////////////// setup //////////////////
-import * as T from './node_modules/three/build/three.module.js';
-import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
+import * as T from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 
 const scene = new T.Scene();
