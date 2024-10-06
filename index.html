@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yesui Ulziibayar</title>
+  <meta name="description" content="Yesui Ulziibayar Portfolio">
+  <meta name="keywords" content="Yesui Ulziibayar, Portfolio, Software Engineer, Software Developer, Data Science">
+  <meta name="author" content="Yesui Ulziibayar">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "../node_modules/three/build/three.module.js",
+            "three/examples/jsm/controls/OrbitControls": "../node_modules/three/examples/jsm/controls/OrbitControls.js"
+        }
+    }
+    </script>
+</head>
+
+<body>
+  <header>
+    <h1 class="animated-header">Yesui Ulziibayar</h1>
+    
+    <nav id=navbar>
+      <ul>
+        
+        <li><a class= "nav-tab active" id="homebtn" href="#home">Home</a></li>
+        <li><a class= "nav-tab" id="aboutbtn" href="#about">About</a></li>
+        <li><a class= "nav-tab" id="experiencebtn" href="#experience">Experience</a></li>
+        <li><a class= "nav-tab" id="skillsbtn" href="#skills">Skills</a></li>
+        <li><a class= "nav-tab" id="experiencebtn" href="#projects">Projects</a></li>
+        
+      </ul>
+      <button id="resumeBtn">Resume</button>
+    </nav>
+
+  </header>
+    <section id="home" class="home">
+      <!-- animated text and profile image -->
+      <div class="text-container" >
+        <!--animated text-->
+        <div class="text-dot">
+          <p tabindex="0" id="text"></p>
+          <p id="dot">.</p>
+        </div>
+        <img id="profile-pic" src="./resources/profile_pic.jpg" alt="Yesui Ulziibayar sits on the UW-Madison Bucky Badger statue copying its pose that looks out onto Lake Mendota." e="margin-top: -80px;">
+      </div>
+      <div id="sub-blurb"><p>An aspiring Software Engineer and Data Scientist.</p></div>
+
+    </section>
+
+    <!--butterfly animation-->
+    <div id="animation-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="../sketch.js"></script>
+    <script src="../style.js"></script>
+    <script src="../navbar.js"></script>
+
+  <main>
+    <div id="scrollArrowBtn">
+      <p id="scrollArrowText" class="scrollArrowText">Scroll N Explore</p>
+      <p id="scrollArrow" class="scrollArrow">↓</p>
+    </div>
+    <section id="about" class="about">
+      <div class="wave-transition">
+        <svg width="3359" height="600" viewBox="0 0 3359 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="Group 1">
+        <path id="wave3" d="M239 100.256C427.993 -13.407 632.36 -13.43 924.5 100.256C1150.12 188.054 1471.56 162.312 1610 100.256C1705 78.2523 1982.19 -31.1688 2295.5 100.256C2534.35 190.499 2851.88 165.78 2981 100.256V496.756C2711.94 344.507 2430.64 452.111 2295.5 496.756C2161.14 584.536 1844.35 606.031 1610 496.756C1321.67 330.111 1042.96 441.512 924.5 496.756C778.906 602.549 461.972 622.659 239 496.756V100.256Z" fill="black" fill-opacity="0.5"/>
+        <g id="wave2" filter="url(#filter0_d_0_1)">
+        <path d="M613 101.256C801.993 -12.407 1006.36 -12.43 1298.5 101.256C1524.12 189.054 1845.56 163.312 1984 101.256C2079 79.2523 2356.19 -30.1688 2669.5 101.256C2908.35 191.499 3225.88 166.78 3355 101.256V497.756C3085.94 345.507 2804.64 453.111 2669.5 497.756C2535.14 585.536 2218.35 607.031 1984 497.756C1695.67 331.111 1416.96 442.512 1298.5 497.756C1152.91 603.549 835.972 623.659 613 497.756V101.256Z" fill="black" fill-opacity="0.5" shape-rendering="crispEdges"/>
+        </g>
+        <path id="wave1" d="M0 100.733C188.993 -12.9299 393.36 -12.9529 685.5 100.733C911.117 188.531 1232.56 162.789 1371 100.733C1466 78.7294 1743.19 -30.6917 2056.5 100.733C2295.35 190.976 2612.88 166.257 2742 100.733V497.233C2472.94 344.984 2191.64 452.588 2056.5 497.233C1922.14 585.013 1605.35 606.508 1371 497.233C1082.67 330.588 803.957 441.989 685.5 497.233C539.906 603.026 222.972 623.136 0 497.233V100.733Z" fill="black" fill-opacity="0.5"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_0_1" x="609" y="16" width="2750" height="576.805" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
+      </div>
+      <div class="svg-text">      
+        <h2 class="page-header" id="about-header">About Me</h2>
+        <p class="page-text" id="about-text">I am an aspiring software engineer who recently graduated with a BS in Computer Science and Data Science, with a certificate in Digital Studies at the University of Wisconsin-Madison. I have strong experience in development using Java, Python, C, React/React Native, JavaScript, CSS, HTML and more. Apart from technical skills, I bring strong interpersonal, multitasking, and written communication skills.<br><br>My passion for computer science and data science is deep-rooted in my love for solving complex problems and finding creative solutions. In creating new programs and exploring algorithms, I see myself as an inventor crafting intricate machines towards an end-goal to solve challenges that make a real impact. Throughout this process, I consistently find joy in setting new goals for myself and staying focused on those goals.</p>
+      </div>
+    </section>
+
+    
+
+    <!-- Your website content here -->
+    <section id="experience">
+      <div class="experience-section">
+        <div class="experience-div">
+          <h2 id="experience-header" class="page-header">Experience</h2>
+        </div>
+        <div class="table-div">
+          <table class="styled-table">
+            <tr class = point>
+              <td>
+                <td>
+                  <div class="duration durationLeft">September 2021 - May 2024</div>
+                </td>
+                <td class="marker">
+                  <div class="timeline-line"></div>
+                  <div class="timeline-marker"></div>
+                </td>
+                <td class="shaded">
+                  <div class="position">University of Wisconsin - Madison</div>
+                  <div class="company">College of Letters and Sciences</div>
+                  <div class="description">Earned Bachelor of Science degrees studying Computer Science and Data Science along with a certificate in Digital Studies through which I studied human interaction and ethics in computer science.</div>
+                </td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <!-- <div class="timeline-marker"></div> -->
+                <td class="shaded">
+                  <div class="position">Web Editor</div>
+                  <div class="company">Wisconsin Historical Society</div>
+                  <div class="description">Published 5+ websites daily, employing HTML for content updates and leveraging GitLab for seamless integration. Spearheaded a project to analyze web traffic, and optimize website efficiency using APIs.</div>
+                </td>
+                <td>
+                  <!-- <div class="timeline-line"></div> -->
+                  <div class="timeline-marker"></div>
+                </td>
+                <td>
+                  <div class="duration durationRight">February 2023 - April 2024</div>
+                </td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <td>
+                  <div class="duration durationLeft">June - August 2023</div>
+                </td>
+                <td>
+                  <!-- <div class="timeline-line"></div> -->
+                  <div class="timeline-marker"></div>
+                </td>
+                <td class="shaded">
+                  <div class="position">Network Core Integration Engineering Intern</div>
+                  <div class="company">US Cellular</div>
+                  <div class="description">Enhanced coverage of the IMS core architecture by updating the ADCs following rigorous review and testing protocols. Elevated customer satisfaction and safety in Nebraska by expanding coverage of the *55 emergency code.</div>
+                </td>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <td class="shaded">
+                  <div class="position">Mathnasium Tutor </div>
+                  <div class="company">Mathnasium of Buffalo Grove </div>
+                  <div class="description">Developed tailored mathematics lesson plans for diverse student demographics, ranging from elementary to 12th grade. Proficiently coordinated concurrent tutoring sessions, fostering student engagement with personalized feedback.</div>
+                </td>
+                <td>
+                  <!-- <div class="timeline-line"></div> -->
+                  <div class="timeline-marker"></div>
+                </td>
+                <td>
+                  <div class="duration durationRight">June - September 2022</div>
+                </td>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <td>
+                <div class="duration durationLeft">June - July 2022</div>
+              </td>
+              <td>
+                <!-- <div class="timeline-line"></div> -->
+                <div class="timeline-marker"></div>
+              </td>
+              <td class="shaded">
+                <div class="position">Business Development Sales Representative</div>
+                <div class="company">Swoop Business Solutions</div>
+                <div class="description">Executed targeted outreach through 200+ daily calls, increasing client engagement by 2% appointment conversion rate. Cultivated strong relationships through proactive follow-ups, boosting overall client satisfaction and retention.</div>
+              </td>
+            </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <!-- <canvas id="large-canvas"></canvas> -->
+      <!-- Skills -->
+      <h2 class="page-header"></h2>
+      <div class="skill-category-names">
+        <h3 class="skill-category" id="lang">Languages</h3>
+        <h3 class="skill-category" id="tech">Technologies</h3>
+        <h3 class="skill-category" id="soft">Soft Skills</h3>
+      </div>
+      
+      <div class="skill-canvases">
+        <div id="canvas-div-lang"><canvas id="languages-canvas" class="skills-canvas"></canvas></div>
+        <div id="canvas-div-tech"><canvas id="technologies-canvas"class="skills-canvas"></canvas></div>
+        <div id="canvas-div-soft"><canvas id="softskills-canvas"class="skills-canvas"></canvas></div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="projects-page-header">
+        <h2 class="page-header">Projects</h2>
+      </div>
+      <div>
+        
+        <div class="projects-header-div">
+          <h2 class="projects-header">Course Projects</h2>
+        </div>
+        
+        <div class="project-cards-container">
+          <div class="project-card">
+            <div class="card-details">
+              <p>FUSE File System</p>
+              <p>A single-threaded log-structured file system created using FUSE, a framework enabling the creation of custom file systems rather than requiring modification to the kernel. The FS allows for reading, writing, creating directories, deleting files, etc.</p>
+              <div class="tools">
+                <p>C</p>
+                <p>FUSE</p>
+              </div>
+            </div>
+              <!-- <img class="card-img" src="resources/profile_pic.jpg"> -->
+              <iframe class="card-content" width="560" height="315" src="https://www.youtube.com/embed/COiAi1vo6gQ?si=RJH-tg-zAUSXWpYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="project-card">
+            <div class="card-details">
+              <p>Base Compiler Code Generator</p>
+              <p>A compiler that generates code by first generating a scanner through JLex through regex directives, generating a parser through Java CUP given a CFG, scanning the base language, parsing the base language, analyzing the semantics, then outputting the relevant code </p>
+              <div class="tools">
+                <p>Java</p>
+                <p>JLex</p>
+                <p>Java CUP</p>
+              </div>
+            </div>
+            <iframe class="card-content" width="560" height="315" src="https://www.youtube.com/embed/Iz-H3eUyiJQ?si=p15q2tcrtKnCxnkc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>           
+          </div>
+        </div>
+          
+          <div class="projects-header-div">
+            <h2 class="projects-header">Front-End</h2>
+          </div>
+
+          <div class="project-cards-container">
+            <div class="project-card">
+              <div class="card-details">
+                <p>BadgerChat</p>
+                <p>A React Native project that integrates an API to handle POST and GET requests using async and await promises. It provides a seamless user experience with features like login, registration, logout, and the ability to browse anonymously. Once logged in, users can explore chats, create new posts, and manage their posts by deleting them. Each post also displays detailed information, including the poster's identity, the date and time of posting, and the content.</p>
+                <div class="tools">
+                  <p>Expo</p>
+                  <p>React Native</p>
+                  <p>JS</p>
+                </div>              
+              </div>
+              <iframe class="card-content" width="560" height="315" src="https://www.youtube.com/embed/02V2bK1Avk8?si=KU0zGuNF8oTiN1OY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            </div>
+
+              <div class="project-card">
+                <div class="card-details">
+                  <p>BadgerNews</p>
+                  <p>A React Native app utilizing UW-Madison's Badger News API to seamlessly manage POST and GET requests with async/await. The app offers an intuitive interface for filtering news by tags, allowing users to expand each article to view detailed information, including images, titles, authors, publication dates, links, and full content.</p>
+                  <div class="tools">
+                    <p>Expo</p>
+                    <p>React Native</p>
+                    <p>JS</p>
+                  </div>              
+                </div>
+                <iframe class="card-content" width="560" height="315" src="https://www.youtube.com/embed/QYMta2IiyUA?si=Rj0M2GX-Mhxj7YNx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
+          </div>
+          <div class="projects-header-div">
+            <h2 class="projects-header">Graphics</h2>
+          </div>
+          
+        <div class="project-cards-container">
+          
+          <div class="project-card">
+            <div class="card-details">
+              <p>Three.js Laptop</p>
+              <p>A laptop made by UV & Normal mapping a PNG image of a laptop to a geometry made with three.js.</p>
+              <div class="tools">
+                <p>Three.js</p>
+                <p>HTML</p>
+                <p>JS</p>
+              </div>              
+            </div>
+            <div id="laptop-canvas"></div>
+            <script type="module" src="../laptop.js"></script>
+          </div>
+        
+          <div class="project-card">
+            <div class="card-details">
+              <p>Three.js Earth</p>
+              <p>A spinning Earth made by roughness mapping an map of the Earth using three.js.</p>
+              <div class="tools">
+                <p>Three.js</p>
+                <p>HTML</p>
+                <p>JS</p>
+              </div>              
+            </div>
+            <div id="earth-canvas"></div>
+            <script type="module" src="../earth.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="contact">
+      <h2 class="page-header">Contact Me!</h2>
+      <div class="contact-box"></div>
+      <form id="contact-form" class="form">
+        <h3 id="use-form">Use this form:</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <button type="submit">Send</button>
+    </form>
+      
+    </section> -->
+  </main>
+  <footer>
+    <div class="icon-wrapper">
+      <h3>Reach me through:</h3>
+      <a class="contact-icon" href="mailto:yesuiulziibayar@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a class="contact-icon" href="tel:+17735959018" aria-label="Phone">
+        <i class="fas fa-phone"></i>
+      </a>
+      <a class="contact-icon" href="https://www.linkedin.com/in/yesuiulziibayar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a class="contact-icon" href="https://github.com/yulzii/YesuiUlziibayar" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+    </div>
+    <p>Copyright ©2024 Yesui Ulziibayar</p>
+  </footer>
+</body>
+</html>
