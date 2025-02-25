@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //resume pdf display when resume button is clicked
 const resumeBtn = document.getElementById("resumeBtn");
 resumeBtn.addEventListener("click", () => {
-    window.open("resume 2024.pdf", "_blank");
+    window.open("resume 2025.pdf", "_blank");
 });
 document.addEventListener('DOMContentLoaded', () => {
     
