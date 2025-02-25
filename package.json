@@ -1,0 +1,16 @@
+{
+  "name": "yesuiulziibayar",
+  "version": "1.0.0",
+  "main": "earth.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "homepage": "https://yulzii.github.io/YesuiUlziibayar/",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
