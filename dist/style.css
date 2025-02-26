@@ -192,6 +192,7 @@ body {
 /***************About Section****************/
 #about{
   position: relative;
+  scroll-margin-top: 20vh;
 }
 
 .svg-text{
@@ -240,6 +241,7 @@ body {
 
 #experience{
   color: rgb(255, 255, 255);
+  scroll-margin-top: 20vh;
 }
 
 .timeline-line {
@@ -328,6 +330,7 @@ body {
 
 #skills{
   height: auto;
+  scroll-margin-top: 15vh;
 
 }
 
@@ -389,6 +392,7 @@ body {
 #projects {
   margin-top: 5%;
   margin-bottom: 5%;
+  scroll-margin-top: 5vh;
 }
 
 #projects .page-header {
@@ -438,6 +442,18 @@ body {
   object-fit: cover;
   align-self: center;
   /* height: 100%; */
+}
+
+#weather {
+  text-decoration: none;
+  color: inherit;
+}
+
+#weatherImg {
+  width: 30vh;
+  height: 20vh;
+  border-radius: 10px;
+  margin-top: 1vh;
 }
 
 .tools p{

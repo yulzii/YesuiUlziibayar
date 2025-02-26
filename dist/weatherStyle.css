@@ -1,0 +1,49 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+header {margin-top: 20vh;
+    margin-bottom: 20px;
+}
+#cityInput {
+    background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: large;
+    outline: none;
+    cursor: text;
+    padding: 5px 0;
+}
+#getWeatherButton {
+    background-color: rgb(112, 128, 253);
+    color: white;
+    font-size: medium;
+    border-color: white;
+}
+
+#getWeatherButton:hover{
+    background-color: rgb(25, 40, 154);
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.forecast-item {
+    border: 3px solid rgb(202, 211, 243);
+    padding: 15px;
+    border-radius: 10px;
+    width: 160px;
+    background-color: rgb(99, 116, 240);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+#weatherIcon{
+    width: 10vh;
+}
+img {
+    width: 100px;
+}
