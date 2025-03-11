@@ -431,17 +431,15 @@ body {
   height: fit-content;
   width: 380px;
   transition: transform .1s ease;
+  overflow: hidden;
 }
 
 .card-content{
-  
-  /* border: 2px solid rgba(114,207, 192); */
   position: relative;
-  width: 50%;
+  width: 13vw;
   border-radius: 8px;
   object-fit: cover;
   align-self: center;
-  /* height: 100%; */
 }
 
 #weather {
@@ -654,6 +652,11 @@ body {
     width: 90vw;
     margin-left: -5vw;
   }
+
+  .card-content{
+    width: 40vw;
+  }
+  
 }
 
 @media screen and (min-width: 600px){
@@ -694,6 +697,10 @@ body {
   .project-card {
     width:450px;
   }
+
+  .card-content{
+    width: 25vw;
+  }
 }
 
 @media screen and (min-width: 1080px){
@@ -725,6 +732,10 @@ body {
     width: fit-content;
     font-size: x-large;
   }
+
+  .card-content{
+    width: 15vw;
+  }
 }
 
 
@@ -741,6 +752,9 @@ body {
   
   .project-card {
     width:500px;
+  }
+  .card-content{
+    width: 13vw;
   }
 }
 
