@@ -192,6 +192,7 @@ body {
 /***************About Section****************/
 #about{
   position: relative;
+  scroll-margin-top: 20vh;
 }
 
 .svg-text{
@@ -240,6 +241,7 @@ body {
 
 #experience{
   color: rgb(255, 255, 255);
+  scroll-margin-top: 20vh;
 }
 
 .timeline-line {
@@ -328,6 +330,7 @@ body {
 
 #skills{
   height: auto;
+  scroll-margin-top: 15vh;
 
 }
 
@@ -389,6 +392,7 @@ body {
 #projects {
   margin-top: 5%;
   margin-bottom: 5%;
+  scroll-margin-top: 5vh;
 }
 
 #projects .page-header {
@@ -427,17 +431,27 @@ body {
   height: fit-content;
   width: 380px;
   transition: transform .1s ease;
+  overflow: hidden;
 }
 
 .card-content{
-  
-  /* border: 2px solid rgba(114,207, 192); */
   position: relative;
-  width: 50%;
+  width: 13vw;
   border-radius: 8px;
   object-fit: cover;
   align-self: center;
-  /* height: 100%; */
+}
+
+#weather {
+  text-decoration: none;
+  color: inherit;
+}
+
+#weatherImg {
+  width: 30vh;
+  height: 20vh;
+  border-radius: 10px;
+  margin-top: 1vh;
 }
 
 .tools p{
@@ -638,6 +652,11 @@ body {
     width: 90vw;
     margin-left: -5vw;
   }
+
+  .card-content{
+    width: 40vw;
+  }
+  
 }
 
 @media screen and (min-width: 600px){
@@ -678,6 +697,10 @@ body {
   .project-card {
     width:450px;
   }
+
+  .card-content{
+    width: 25vw;
+  }
 }
 
 @media screen and (min-width: 1080px){
@@ -709,6 +732,10 @@ body {
     width: fit-content;
     font-size: x-large;
   }
+
+  .card-content{
+    width: 15vw;
+  }
 }
 
 
@@ -726,6 +753,9 @@ body {
   .project-card {
     width:500px;
   }
+  .card-content{
+    width: 13vw;
+  }
 }
 
 /*butterfly*/
@@ -739,18 +769,6 @@ body {
 }
 #dot {
   visibility: hidden;
-}
-
-#weather {
-  text-decoration: none;
-  color: inherit;
-}
-
-#weatherImg {
-  width: 30vh;
-  height: 20vh;
-  border-radius: 10px;
-  margin-top: 1vh;
 }
 /****************footer***************/
 .icon-wrapper {
