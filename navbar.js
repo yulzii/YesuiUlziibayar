@@ -9,23 +9,31 @@ window.addEventListener("scroll", () => {
     }
 });
 
+function checkScrollPosition() {
+    if (window.scrollY >= window.innerHeight) {
+        scrollArrowBtn.hidden = true;
+    } else {
+        scrollArrowBtn.hidden = false;
+    }
+}
+
+// check whether to hide scrollArrow on page load
+document.addEventListener("DOMContentLoaded", checkScrollPosition);
+
+// check whether to hide scrollArrow on scroll
+window.addEventListener("scroll", checkScrollPosition);
+
+
 //animated scroll button on home
 document.addEventListener("DOMContentLoaded", () => {
     const scrollArrowBtn = document.getElementById("scrollArrowBtn");
     const aboutSection = document.getElementById("about");
-
     if (scrollArrowBtn) {
         window.addEventListener("scroll", () => {
             const scrollTop = window.scrollY;
             const maxScroll = 200;
             let opacity = 1 - Math.min(scrollTop / maxScroll, 1);
             scrollArrowBtn.style.opacity = opacity;
-            if(scrollTop<=maxScroll){
-                scrollArrowBtn.hidden = false;
-            }
-            else {
-                scrollArrowBtn.hidden = true;
-            }
         });
     
         scrollArrowBtn.addEventListener("click", () => {
@@ -96,9 +104,6 @@ resumeBtn.addEventListener("click", () => {
     window.open("Final Resume 2025.pdf", "_blank");
 });
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // const canvas0 = document.getElementById("large-canvas");
-    // const context0 = canvas0.getContext("2d");
 
     const canvas1 = document.getElementById("languages-canvas");
     const context1 = canvas1.getContext("2d");
@@ -110,9 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const context3 = canvas3.getContext("2d");
 
     // Set canvas dimensions
-
-    // canvas0.width = window.innerWidth;
-    // canvas0.height = 300;
 
     canvas1.width = 500;
     canvas1.height = 500;
@@ -178,10 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ];
 
-    // const dvdRadius=generateRadius();
-    // const dvd = { x: generateRandLargeX(), y: generateRandLargeY(), radiusX: dvdRadius*2, radiusY: dvdRadius, velocityX: generateRandVelocity(), velocityY: generateRandVelocity()};
-
-
     // Draw bubbles on canvas
     function drawBubble(bubble, context) {
         context.beginPath();
@@ -197,22 +195,11 @@ document.addEventListener('DOMContentLoaded', () => {
         context.textAlign = 'center';
         context.textBaseline = 'middle';
         context.fillText(bubble.content, bubble.x, bubble.y);
-    }
-
-    //dvd image has CC license
-    //author: David Thiel
-    //https://creativecommons.org/licenses/by-nc/4.0/  
-    // const dvdImage = new Image();
-    // dvdImage.src = 'resources/dvd_logo.png';
-    
-    // function drawImage(bubble, context, img) {
-    //     context.drawImage(img, bubble.x, bubble.y, bubble.radiusX, bubble.radiusY);
-    // }     
+    } 
 
     // Animate bubbles
     function animate() {
         
-        // context0.clearRect(0, 0, window.innerWidth, 300);
         context1.clearRect(0, 0, 500, 500);
         context2.clearRect(0, 0, 500, 500);
         context3.clearRect(0, 0, 500, 500);
@@ -231,10 +218,6 @@ document.addEventListener('DOMContentLoaded', () => {
             drawBubble(bubble, context3);
             updateBubblePosition(bubble, 500, 500);
         });
-
-        
-        // drawImage(dvd, context0, dvdImage);
-        // updateImagePosition(dvd, 500, 500);
 
         requestAnimationFrame(animate);
     }
@@ -261,28 +244,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    
-    // // Update bubble position and check boundaries
-    // function updateImagePosition(bubble, canvasWidth, canvasHeight) {
-    //     bubble.x += bubble.velocityX;
-    //     bubble.y += bubble.velocityY;
-
-    //     if (bubble.x <= 0) {
-    //         bubble.velocityX *= -1;
-    //     } else if (bubble.x + bubble.radiusX > canvasWidth) {
-    //         bubble.x = canvasWidth - bubble.radiusX;
-    //         bubble.velocityX *= -1;
-    //     }
-
-    //     if (bubble.y <= 0) {
-    //         bubble.velocityY *= -1;
-    //     } else if (bubble.y + bubble.radiusY > canvasHeight) {
-    //         bubble.y = canvasHeight - bubble.radiusY;
-    //         bubble.velocityY *= -1;
-    //     }
-    // }
-    // dvdImage.onload = () => {
-    //     animate();
-    // };
     animate();
 });
